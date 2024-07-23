@@ -1,0 +1,28 @@
+<owo-ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/wisp-forest/owo-lib/1.20/owo-ui.xsd">
+    <components>
+        <flow-layout direction="vertical">
+            <children>
+                <stack-layout>
+                    <children>
+                        <texture texture="pda:/textures/gui/book.png" texture-width="300" texture-height="200"
+                                 region-height="200" region-width="300">
+                        </texture>
+
+                        <button id="hi">
+                            <text>button</text>
+                            <positioning type="relative">110,75</positioning>
+                        </button>
+                    </children>
+                    <padding><right>30</right></padding>
+                    <allow-overflow>true</allow-overflow>
+                </stack-layout>
+            </children>
+            <surface>
+                <options-background></options-background>
+            </surface>
+            <horizontal-alignment>center</horizontal-alignment>
+            <vertical-alignment>center</vertical-alignment>
+        </flow-layout>
+    </components>
+</owo-ui>

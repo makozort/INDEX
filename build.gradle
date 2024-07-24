@@ -12,8 +12,8 @@ base {
 
 repositories {
 	maven { url 'https://maven.wispforest.io/releases/' }
-	maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
-	maven { url = "https://maven.quiltmc.org/repository/release" } // Quilt Mappings
+	maven { url  "https://maven.parchmentmc.org" } // Parchment mappings
+	maven { url  "https://maven.quiltmc.org/repository/release" } // Quilt Mappings
 }
 
 loom {
@@ -25,7 +25,6 @@ loom {
 			sourceSet sourceSets.client
 		}
 	}
-
 }
 
 dependencies {
@@ -39,10 +38,9 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "io.wispforest:owo-lib:${project.owo_version}"
 	include "io.wispforest:owo-sentinel:${project.owo_version}"
-	
 }
 
 processResources {

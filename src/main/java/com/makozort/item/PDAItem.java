@@ -4,12 +4,11 @@ package com.makozort.item;
 import com.makozort.networking.BookPayload;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
+net.minecraft.world.item.Item
 
 public class PDAItem extends Item {
     public PDAItem(Settings settings) {
